@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title  %} To-Do List | About ME! {% endblock %}
+{% block header%}
+<div class="page-title">
+
+  <div class="container1">
+    <center>
+    <h1>About ME!</h1>
+  </center>
+  </div>
+</div>
+{% endblock%}
+
+{% block content %}
+<br>
+<style>
+  .page-title{
+    border: 1px solid #e2e2e2;
+    background-color: #fafafa;
+    height: 80px;
+  }
+  .container1{
+    position: relative;
+    margin: 0 auto;
+    padding-top: 10px;
+
+  }
+  .SocialMedia a{
+    padding: 3px;
+    color: red;
+  }
+  .SocialMedia{
+    text-align:center;
+  }
+</style>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2 col-md-4 col-xd-4">
+      <center>
+      <img float="left"height="Auto" width="80%" src="{% static 'images/profile.jpg' %}" alt="">
+    </center>
+    </div>
+    <div class="col-sm-6 col-md-8 col-xd-8">
+      <p>This is Amir Mallaei. I am an Electronic Engineer who loves Backend and Microprocessor programming </p>
+      <br>
+      <p>Here is my profiles on LinkedIn and GitHub:</p>
+      <table class="table table-hover">
+
+        <tr>
+            <td>LinkedIn</td>
+            <td><a href="https://www.linkedin.com/in/amir-mallaei-7353ab161/" target="_blank">https://www.linkedin.com/in/amir-mallaei-7353ab161/</a></td>
+          </tr>
+          <tr>
+            <td>GitHub</td>
+            <td><a href="https://github.com/amirmallaei" target="_blank">https://github.com/amirmallaei</a></td>
+          </tr>
+</table>
+  <p>You could also follow me on Social Medium!</p>
+  <div class="SocialMedia">
+
+      <a href="https://www.instagram.com/lets.py/" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+      <a href="https://www.facebook.com/A.mallaei/" target="_blank"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/A_Mallaei/" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+
+  </div>
+    </div>
+
+  </div>
+</div>
+{% endblock%}
